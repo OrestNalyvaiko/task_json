@@ -1,0 +1,57 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Banks",
+  "description": "Banks",
+  "type": "array",
+  "required": [
+    "name",
+    "country",
+    "type",
+    "depositor",
+    "accountID",
+    "amountOnDeposit",
+    "profitability",
+    "timeConstraints"
+  ],
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Bank name"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country when bank is situated"
+    },
+    "type": {
+      "type": "string",
+      "description": "Type of deposit",
+      "enum": ["TOTHEQUESTION","URGENT","CALCULATED","CUMULATIVE","SAVINGS","METAL"]
+    },
+    "depositor": {
+      "type": "string",
+      "description": "Depositor name"
+    },
+    "accountID": {
+      "type": "string",
+      "description": "Account id",
+      "pattern": "[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]"
+    },
+    "amountOnDeposit": {
+      "type": "number",
+      "description": "Amount on deposit",
+      "minimum": 0
+    },
+    "profitability": {
+      "type": "number",
+      "description": "Profitability of deposit",
+      "exclusiveMinimum": 0,
+      "exclusiveMaximum": 20
+    },
+    "timeConstraints": {
+      "type": "integer",
+      "description": "Time constraints",
+      "exclusiveMinimum": 0,
+      "exclusiveMaximum": 15
+    }
+  }
+}

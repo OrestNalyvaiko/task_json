@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Private Bank",
+    "country": "Ukraine",
+    "type": "TOTHEQUESTION",
+    "depositor": "Orest Nalyvaiko",
+    "accountID": "8775643212345654",
+    "amountOnDeposit": 1000.12,
+    "profitability": 3.5,
+    "timeConstraints": 2
+  },
+  {
+    "name": "Oshad Bank",
+    "country": "Ukraine",
+    "type": "METAL",
+    "depositor": "Bogdan Chupa",
+    "accountID": "8775632212345654",
+    "amountOnDeposit": 10513.46,
+    "profitability": 5.8,
+    "timeConstraints": 75
+  }
+]
